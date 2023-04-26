@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "practical-bandits-tutorial"
+version = "0.1.0"
+description = "Hands-on material for the practical bandits tutorial on TheWebConf 2023"
+authors = ["Bram van den Akker <bram.vandenakker@booking.com>"]
+readme = "README.md"
+packages = [{include = "practical_bandits_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "<3.10,>=3.8"
+scikit-learn = "1.1.3"
+scipy = "1.9.3"
+jupyter = "^1.0.0"
+obp = "^0.5.7"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
